@@ -1,0 +1,20 @@
+{
+  "name": "resume-builder",
+  "version": "1.0.0",
+  "description": "Open Source resume builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shyelc",
+  "license": "ISC",
+  "dependencies": {
+    "@json-editor/json-editor": "^2.5.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-paper": "^0.3.5",
+    "resume-schema": "^1.0.0"
+  },
+  "type": "module"
+}
