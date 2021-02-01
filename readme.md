@@ -21,23 +21,3 @@ If this project is of any interest to you and you
 * have an issue
 
 Please open an issue so we can improve on the work!
-
-## Hosted APP
-
-TBD
-
-## Usage
-
-currently there's no npm package but you can still use from src!
-
-```
-git clone https://github.com/shaielc/json-resume-editor.git
-cd json-resume-editor
-npm install
-node index.js
-```
-
-now open your browser at localhost:3000
-
-## License
-[MIT](LICENSE)

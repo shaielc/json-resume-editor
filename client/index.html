@@ -1,49 +1,20 @@
-<!DOCTYPE html>
-<!-- saved from url=(0052)https://json-editor.github.io/json-editor/basic.html -->
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Basic JSON Editor Example</title>
-
-  <!-- externals -->
-  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js"></script>
-
-  <!-- internals -->
-  <link rel="stylesheet" href="split.css">
-  <link rel="stylesheet" href="spread.css">
-
-  <script>
-    // Set the default CSS theme and icon library globally
-    JSONEditor.defaults.theme = 'spectre';
-    JSONEditor.defaults.iconlib = 'spectre';
-  </script>
-  <style id="theme-default"></style>
-  <style id="theme-html"></style>
-</head>
-
-<body data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="">
-  <!-- <h1>Basic JSON-Resume Editor</h1> -->
-  <div>
-    <div class="split left">
-      <div>
-        <button id="update">Preview</button>
-        <button id="print">Print</button>
-        <div id="editor_holder" data-theme="html">
-        </div>
-      </div>
+<div>
+<div class="split left">
+    <div>
+    
+    <button id="print">Print</button>
+    <button id="update">Preview</button>
+    <button id="download_pdf">PDF</button>
+    <span> Themes: <select id="theme_selector" style="width: 5em;"></select> </span>
+    <div id="editor_holder" data-theme="html">
     </div>
-    <div class="split right">
-      <div id="output_holder" class="spread">
-      </div>
     </div>
-  </div>
-
-  <script src="editor.js"></script>
-</body>
-
-</html>
+</div>
+<div class="split right">
+    <div style="height: 100vh;">
+        <div id="output_holder" class="spread"></div>
+          
+    </div>
+    </div>
+</div>
+</div>

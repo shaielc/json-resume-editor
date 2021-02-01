@@ -1,0 +1,79 @@
+{
+    "basics": {
+      "name": "Shy-El Cohen",
+      "label": "",
+      "image": "",
+      "email": "shaielshmoel@gmail.com",
+      "phone": "0544910932",
+      "url": "",
+      "summary": "Enthusiastic, diligent, self-learning electrical engineer with 2+ years of experience in algorithm development. With a diverse skillset including DSP, Algorithm Performance Analysis, Scientific Python, Cloud Computing, Infrastructure, and Full-stack Development",
+      "location": {
+        "address": "Haris 28",
+        "postalCode": "99101",
+        "city": "Beit Shemesh",
+        "countryCode": "",
+        "region": "israel"
+      }
+    },
+    "work": [
+      {
+        "name": "IDF",
+        "location": "Israel",
+        "description": "Millitary Industry",
+        "position": "Algorithm Developer",
+        "url": "",
+        "startDate": "2018-02-04",
+        "summary": "",
+        "highlights": [
+          "analyzed RF signals",
+          "Created and implemented DSP algorithms",
+          "Designed and deployed systems for automatic algorithm execution",
+          "Examined and compared different technologies and algorithms"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Jerusalem College of Technology",
+        "url": "",
+        "area": "Electrical Engineering",
+        "studyType": "",
+        "startDate": "2012",
+        "endDate": "2018",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "skills": [
+      {
+        "name": "Scientific Python",
+        "level": "Expert",
+        "keywords": [
+          "numpy",
+          "pandas",
+          "matplotlib",
+          "scipy"
+        ]
+      },
+      {
+        "name": "Algorithm Development",
+        "level": "Skillfull",
+        "keywords": [
+          "Digital Signal Processing",
+          "Telecommunications",
+          "Performance Analysis"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Hebrew",
+        "fluency": "Native"
+      },
+      {
+        "language": "English",
+        "fluency": "Highly Proficient"
+      }
+    ],
+    "references": []
+  }

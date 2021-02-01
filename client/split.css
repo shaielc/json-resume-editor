@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 0px;
   }
   
   /* Control the left side */
