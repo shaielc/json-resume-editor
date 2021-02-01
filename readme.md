@@ -10,6 +10,7 @@ enabling features like:
   * resume-json
   * PDF
   * other formats - TBD
+* Support for multiple output themes
 * Integration with github gist - [details](https://jsonresume.org/getting-started/) - TBD
 * Advanced editing features - TBD
   * Ordering of sections -TBD
