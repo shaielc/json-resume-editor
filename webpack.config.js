@@ -22,6 +22,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Resume JSON Editor',
+      cache: false
     }),
   ],
   output: {
