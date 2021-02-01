@@ -1,20 +1,19 @@
 <div>
-<div class="split left">
-    <div>
-    
-    <button id="print">Print</button>
-    <button id="update">Preview</button>
-    <button id="download_pdf">PDF</button>
-    <span> Themes: <select id="theme_selector" style="width: 5em;"></select> </span>
-    <div id="editor_holder" data-theme="html">
+    <div class="split left">
+        <div style="width: 20vw;">
+            <div id="editor_holder" data-theme="html">
+            </div>
+        </div>
     </div>
+    <div class="split right">
+
+        <div style="height: 100vh;width: 80vw;">
+            <button id="print">Print</button>
+            <button id="update">Preview</button>
+            <button id="download_pdf">PDF</button>
+            <span> Themes: <select id="theme_selector" style="width: 5em;"></select> </span>
+            <div id="output_holder" class="spread"></div>
+
+        </div>
     </div>
-</div>
-<div class="split right">
-    <div style="height: 100vh;">
-        <div id="output_holder" class="spread"></div>
-          
-    </div>
-    </div>
-</div>
 </div>
