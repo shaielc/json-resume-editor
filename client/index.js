@@ -31,6 +31,19 @@ for (const theme of themes)
 
 var editor = new ResumeEditor(elements.editor)
 
+function appendHTMLIframe(element, html)
+{
+  const iframe = document.createElement("iframe")
+  element.append(iframe)
+  iframe.style.height = "100%"
+  iframe.style.width = "100%"
+  const doc = iframe.contentWindow.document
+  doc.open()
+  doc.write(html)
+  doc.close()
+  
+}
+
 function printHTML(html) {
   var mywindow = window.open("", "PRINT", "height=600,width=800");
 
@@ -54,18 +67,21 @@ function GetPDF(xmlhttp) {
 elements.preview_btn.addEventListener("click", function () {
   // Get the value from the editor
   editor.getHTML(elements.theme_selector.value).then((xmlhttp) => {
-    elements.preview.innerHTML = xmlhttp.responseText;
+    elements.preview.innerHTML = "";
+    appendHTMLIframe(elements.preview, xmlhttp.responseText)
   });
 });
 
 elements.print_btn.addEventListener("click", function () {
     editor.getHTML(elements.theme_selector.value).then((xmlhttp) => {
+    elements.preview.innerHTML = ""
     printHTML(xmlhttp.responseText);
   });
 });
 
 elements.download_pdf.addEventListener("click", function () {
   editor.getPDF(elements.theme_selector.value).then((xmlhttp) => {
+    elements.preview.innerHTML = ""
    GetPDF(xmlhttp)
   })
 })
