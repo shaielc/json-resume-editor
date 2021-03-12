@@ -1,0 +1,8 @@
+<body>
+    <script>
+        document.body.onload = () => {
+            localStorage.setItem("resume", JSON.stringify(<%-JSON.stringify(resume)%>))
+            document.location.href = "/"
+        }
+    </script>
+</body>
