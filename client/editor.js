@@ -7,6 +7,7 @@ JSONEditor.defaults.iconlib = 'spectre';
 
 export class ResumeEditor {
   constructor(el, schema) {
+    console.log(schema)
     this.resumeEditor = null
     this.el = ensureElement(el);
     this.resumeEditor = new JSONEditor(el, {

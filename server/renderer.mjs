@@ -1,8 +1,24 @@
 import { themeManager } from "./theme-manager.mjs";
 import puppeteer from "puppeteer";
+import $ from "jquery";
+import { JSDOM } from "jsdom";
+import Markdown from "markdown-it";
+
+function backendMiddleWare(html) {
+  const dom = new JSDOM(html)
+  const markdown = Markdown({html: true, xhtmlOut: true, typographer: true, highlight: true})
+  Array.from(dom.window.document.body.querySelectorAll("*")).filter(node=> node.children.length === 0)
+  .filter(node => !/^[\n\t]/.test(node.textContent)).forEach(node => {
+    node.innerHTML = markdown.renderInline(node.textContent)
+  })
+  return dom.serialize()
+}
 
 export async function render(resume_object, theme) {
-  return (await themeManager.get(theme)).render(resume_object);
+  let html = (await themeManager.get(theme)).render(resume_object);
+  html = backendMiddleWare(html)
+
+  return html
 }
 
 export async function renderPage(resume_object, theme, headless = true) {
